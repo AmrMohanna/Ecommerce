@@ -1,0 +1,2 @@
+file:src/test/java/Feature/F06_homeSliders.feature:3:6
+file:src/test/java/Feature/F07_followUs.feature:9

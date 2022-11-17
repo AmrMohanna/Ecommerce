@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 17 21:14:10 EET 2022</td>
+</tr>
+<tr><td>Total time:</td><td>81 seconds (81481 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Chose second item", "slider"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.example.stepDefs.D06_homeSlidersStepDef.selectiphone(D06_homeSlidersStepDef.java:53)
+	at ✽.usre select second(file:///C:/Users/Amr%20Mehanna/IdeaProjects/demonopcommerce/src/test/java/Feature/F06_homeSliders.feature:7)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace490475818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace490475818'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D06_homeSlidersStepDef.selectiphone(D06_homeSlidersStepDef.java:53)
+	at ✽.usre select second(file:///C:/Users/Amr%20Mehanna/IdeaProjects/demonopcommerce/src/test/java/Feature/F06_homeSliders.feature:7)
+</pre></div></td>
+<td>7</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open Rss news site", "check communication pages navigate to correct website"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.example.stepDefs.D07_followUsStepDef.checkRss(D07_followUsStepDef.java:56)
+	at ✽.open Rss site(file:///C:/Users/Amr%20Mehanna/IdeaProjects/demonopcommerce/src/test/java/Feature/F07_followUs.feature:11)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1413473944", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1413473944'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D07_followUsStepDef.checkRss(D07_followUsStepDef.java:56)
+	at ✽.open Rss site(file:///C:/Users/Amr%20Mehanna/IdeaProjects/demonopcommerce/src/test/java/Feature/F07_followUs.feature:11)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Chose first item", "slider"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.example.stepDefs.D06_homeSlidersStepDef.selectNokia(D06_homeSlidersStepDef.java:33)
+	at ✽.usre select first(file:///C:/Users/Amr%20Mehanna/IdeaProjects/demonopcommerce/src/test/java/Feature/F06_homeSliders.feature:4)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1899640261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1899640261'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D06_homeSlidersStepDef.selectNokia(D06_homeSlidersStepDef.java:33)
+	at ✽.usre select first(file:///C:/Users/Amr%20Mehanna/IdeaProjects/demonopcommerce/src/test/java/Feature/F06_homeSliders.feature:4)
+</pre></div></td>
+<td>4</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open Youtube site", "check communication pages navigate to correct website"</td>
+<td></td>
+<td>6</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can change currency type and affect at all App", "F03_Currency | user could change the currency"</td>
+<td></td>
+<td>5</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could login with invalid email and password", "F02_Login | users could use login functionality to use their accounts"</td>
+<td></td>
+<td>5</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user hover on main category", "user Hover on mainCategory and select one"</td>
+<td></td>
+<td>4</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "face book", "check communication pages navigate to correct website"</td>
+<td></td>
+<td>5</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "wishlist number more than 1", "Add product to wishlist"</td>
+<td></td>
+<td>4</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "1 -user can search with product SKU and get relevant data", "usre search with name ans sku"</td>
+<td></td>
+<td>5</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to wishlist", "Add product to wishlist"</td>
+<td></td>
+<td>3</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "1 -user can search with product name and get relevant data", "usre search with name ans sku"</td>
+<td></td>
+<td>4</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open Twitter site", "check communication pages navigate to correct website"</td>
+<td></td>
+<td>5</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "guest user could register with valid data successfully", "F01_Register | users could register with new accounts"</td>
+<td></td>
+<td>7</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could login with valid email and password", "F02_Login | users could use login functionality to use their accounts"</td>
+<td></td>
+<td>6</td>
+<td>org.example.testRunner.runners@11a9e7c8</td></tr>
+</table><p>
+</body>
+</html>

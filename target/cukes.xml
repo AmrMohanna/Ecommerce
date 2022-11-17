@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="80.955">
+    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="7.388">
+        <system-out><![CDATA[Given user go to register page..............................................passed
+When user select gender type................................................passed
+And user enter first name and last name.....................................passed
+And user enter date of birth................................................passed
+And user enter email........................................................passed
+And user fills Password fields..............................................passed
+Then user clicks on register button.........................................passed
+And success message is displayed............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="6.022">
+        <system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid data.............................................passed
+Then user click on login button.............................................passed
+And user login to the system successfully...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with invalid email and password" time="5.115">
+        <system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Invalid data...........................................passed
+Then user click on login button.............................................passed
+And user can not login to the system successfully...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F03_Currency | user could change the currency" name="user can change currency type and affect at all App" time="5.229">
+        <system-out><![CDATA[When user chose euro currency...............................................passed
+Then all product currency change to Euro....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="usre search with name ans sku" name="1 -user can search with product name and get relevant data" time="4.893">
+        <system-out><![CDATA[When user search enter product name and click search........................passed
+And search with book........................................................passed
+Then user get relevant data.................................................passed
+And url contains............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="usre search with name ans sku" name="1 -user can search with product SKU and get relevant data" time="5.791">
+        <system-out><![CDATA[When user search enter SKU and click search.................................passed
+And search with book........................................................passed
+Then user get relevant data to SKU..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user Hover on mainCategory and select one" name="user hover on main category" time="4.455">
+        <system-out><![CDATA[When user hover on main category............................................passed
+Then Click an navigate to subcategory.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="slider" name="Chose first item" time="4.099">
+        <failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When usre select first......................................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D06_homeSlidersStepDef.selectNokia(D06_homeSlidersStepDef.java:33)
+	at ✽.usre select first(file:///C:/Users/Amr%20Mehanna/IdeaProjects/demonopcommerce/src/test/java/Feature/F06_homeSliders.feature:4)
+]]></failure>
+    </testcase>
+    <testcase classname="slider" name="Chose second item" time="7.636">
+        <failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When usre select second.....................................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D06_homeSlidersStepDef.selectiphone(D06_homeSlidersStepDef.java:53)
+	at ✽.usre select second(file:///C:/Users/Amr%20Mehanna/IdeaProjects/demonopcommerce/src/test/java/Feature/F06_homeSliders.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="check communication pages navigate to correct website" name="face book" time="5.807">
+        <system-out><![CDATA[When user click on Fb icon..................................................passed
+Then open FB site...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="check communication pages navigate to correct website" name="Open Twitter site" time="5.771">
+        <system-out><![CDATA[When user click on Twitter icon.............................................passed
+Then open Twitter site......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="check communication pages navigate to correct website" name="Open Rss news site" time="3.964">
+        <failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When user click on Rss icon.................................................passed
+Then open Rss site..........................................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D07_followUsStepDef.checkRss(D07_followUsStepDef.java:56)
+	at ✽.open Rss site(file:///C:/Users/Amr%20Mehanna/IdeaProjects/demonopcommerce/src/test/java/Feature/F07_followUs.feature:11)
+]]></failure>
+    </testcase>
+    <testcase classname="check communication pages navigate to correct website" name="Open Youtube site" time="6.396">
+        <system-out><![CDATA[When user click on Youtube icon.............................................passed
+Then open Youtube site......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Add product to wishlist" name="Add product to wishlist" time="3.908">
+        <system-out><![CDATA[When user click on wish mark................................................passed
+Then get green message......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Add product to wishlist" name="wishlist number more than 1" time="4.171">
+        <system-out><![CDATA[When user click on wish mark................................................passed
+When user click on wish list page...........................................passed
+Then wish list count more than1.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
